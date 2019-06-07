@@ -1,0 +1,8 @@
+execute pathogen#infect()
+syntax on
+inoremap jj <Esc>
+colorscheme allomancer
+:hi Normal          ctermfg=none ctermbg=none
+:hi EndOfBuffer     ctermfg=none ctermbg=none
+let g:airline_theme='base16'
+let g:airline_powerline_fonts = 1

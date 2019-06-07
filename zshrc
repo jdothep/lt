@@ -1,0 +1,28 @@
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _complete _ignored _correct _approximate
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:]}={[:upper:]}' ''
+zstyle ':completion:*' menu select=1
+zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
+zstyle :compinstall filename '/home/ui/.zshrc'
+
+autoload -Uz compinit promptinit
+compinit
+promptinit
+prompt pws
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+bindkey -e
+# End of lines configured by zsh-newuser-install
+export TERM=xterm-256color
+
+alias vim="nvim"
+alias zyp="sudo zypper"
+alias fdisk="sudo fdisk"
+alias dd="sudo dd"
+alias systemctl="sudo systemctl"
+alias ls="ls -l --color=auto"
+
+PATH="/home/ui/Apps/bin:/sbin:/usr/sbin:$PATH"
